@@ -32,12 +32,7 @@ class _LiturgiaDiariaState extends State<LiturgiaDiaria> {
           ),
         ),
         body: const TabBarView(
-          children: [
-            PrimeiraLeitura(),
-            Salmo(),
-            SegundaLeitura(),
-            Evangelho()
-          ],
+          children: [PrimeiraLeitura(), Salmo(), SegundaLeitura(), Evangelho()],
         ),
       ),
     );

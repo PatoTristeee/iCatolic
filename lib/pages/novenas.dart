@@ -21,35 +21,29 @@ class _NovenasState extends State<Novenas> {
           color: Colors.white,
         ),
       ),
-      
       body: SingleChildScrollView(
         child: Center(
-          child: Column(
-            children: [
-              SizedBox(height: 10),
-
-              ElevatedButton(
-
+            child: Column(
+          children: [
+            const SizedBox(height: 10),
+            ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      fixedSize: const Size(388, 88),
-                      primary: const Color(0xff252525),
-                      shadowColor: const Color(0xff000000)
-                      ),
-
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const PSocorro()));
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                    minimumSize: const Size(double.infinity, 70),
+                    primary: const Color(0xff252525),
+                    shadowColor: const Color(0xff000000)),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PSocorro()));
                 },
-                child: Text("Novena Perpétua a Nossa Senhora do Perpétuo Socorro")
-                )
-
-            ],
-          )
-          ),
+                child:
+                    Text("Novena Perpétua a Nossa Senhora do Perpétuo Socorro"))
+          ],
+        )),
       ),
-      
     );
-
-    
   }
 }

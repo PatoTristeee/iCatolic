@@ -14,7 +14,7 @@ class _NovenasState extends State<PSocorro> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: const Color(0xff262626),
-        title: const Text("Novena Perpétua a Nossa Senhora do Perpétuo Socorro"),
+        title: const Text("Perpétuo Socorro"),
         titleTextStyle: const TextStyle(
           color: Colors.white,
         ),
