@@ -22,10 +22,10 @@ class _NovenasState extends State<Novenas> {
         ),
       ),
       body: SingleChildScrollView(
-        child: Center(
-            child: Column(
+        padding: EdgeInsets.all(18.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 10),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
@@ -42,7 +42,7 @@ class _NovenasState extends State<Novenas> {
                 child:
                     Text("Novena Perpétua a Nossa Senhora do Perpétuo Socorro"))
           ],
-        )),
+        ),
       ),
     );
   }

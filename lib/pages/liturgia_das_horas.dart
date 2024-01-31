@@ -15,23 +15,31 @@ class _LHorasState extends State<LHoras> {
         title: Text("Liturgia das Horas"),
         titleTextStyle: TextStyle(color: Colors.white),
       ),
-      body: Center(
+      body: Container(
+        padding: const EdgeInsets.all(18.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Flexible(
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20)),
+                      minimumSize: const Size(double.infinity, 70),
+                      primary: Color(0xff262626),
+                      onPrimary: Colors.white,
+                      shadowColor: Colors.black),
+                  onPressed: () {},
+                  child: Text("Invitatório")),
+            ),
+            const Spacer(
+              flex: 1,
+            ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
-                    primary: Color(0xff262626),
-                    onPrimary: Colors.white,
-                    shadowColor: Colors.black),
-                onPressed: () {},
-                child: Text("Invitatório")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)),
+                    minimumSize: const Size(double.infinity, 70),
                     primary: Color(0xff262626),
                     onPrimary: Colors.white,
                     shadowColor: Colors.black),
@@ -41,6 +49,7 @@ class _LHorasState extends State<LHoras> {
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
+                    minimumSize: const Size(double.infinity, 70),
                     primary: Color(0xff262626),
                     onPrimary: Colors.white,
                     shadowColor: Colors.black),
@@ -50,6 +59,7 @@ class _LHorasState extends State<LHoras> {
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
+                    minimumSize: const Size(double.infinity, 70),
                     primary: Color(0xff262626),
                     onPrimary: Colors.white,
                     shadowColor: Colors.black),
@@ -59,6 +69,7 @@ class _LHorasState extends State<LHoras> {
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
+                    minimumSize: const Size(double.infinity, 70),
                     primary: Color(0xff262626),
                     onPrimary: Colors.white,
                     shadowColor: Colors.black),
