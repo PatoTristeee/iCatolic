@@ -20,20 +20,18 @@ class _LHorasState extends State<LHoras> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Flexible(
-              child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20)),
-                      minimumSize: const Size(double.infinity, 70),
-                      primary: Color(0xff262626),
-                      onPrimary: Colors.white,
-                      shadowColor: Colors.black),
-                  onPressed: () {},
-                  child: Text("Invitatório")),
-            ),
-            const Spacer(
-              flex: 1,
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                    minimumSize: const Size(double.infinity, 70),
+                    primary: Color(0xff262626),
+                    onPrimary: Colors.white,
+                    shadowColor: Colors.black),
+                onPressed: () {},
+                child: Text("Invitatório")),
+            const SizedBox(
+              height: 10,
             ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -45,6 +43,9 @@ class _LHorasState extends State<LHoras> {
                     shadowColor: Colors.black),
                 onPressed: () {},
                 child: Text("Laudes")),
+            const SizedBox(
+              height: 10,
+            ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
@@ -55,6 +56,9 @@ class _LHorasState extends State<LHoras> {
                     shadowColor: Colors.black),
                 onPressed: () {},
                 child: Text("Hora Média")),
+            const SizedBox(
+              height: 10,
+            ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
@@ -65,6 +69,9 @@ class _LHorasState extends State<LHoras> {
                     shadowColor: Colors.black),
                 onPressed: () {},
                 child: Text("Vésperas")),
+            const SizedBox(
+              height: 10,
+            ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(

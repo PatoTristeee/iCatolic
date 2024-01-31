@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../tg/txt_p_socorro.dart';
+
 class PSocorro extends StatefulWidget {
   const PSocorro({super.key});
 
@@ -19,6 +21,7 @@ class _NovenasState extends State<PSocorro> {
           color: Colors.white,
         ),
       ),
+      body: P_Socorro(),
     );
   }
 }
