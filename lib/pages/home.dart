@@ -1,5 +1,6 @@
 import 'package:icatolico/pages/liturgia_diaria.dart';
 import 'package:icatolico/pages/novenas.dart';
+import 'package:icatolico/pages/tercos.dart';
 
 import 'liturgia_das_horas.dart';
 import 'widget_drawer.dart';
@@ -39,9 +40,6 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         backgroundColor: const Color(0xff262626),
         title: const Text("iCatólico"),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-        ),
       ),
       drawer: menuDrawer(context),
       body: SingleChildScrollView(
@@ -161,7 +159,10 @@ class _HomeState extends State<Home> {
                           primary: const Color(0xff252525),
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
-                        alert();
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Tercos()));
                       },
                       child: const Text("Terço")),
                   const SizedBox(width: 10),

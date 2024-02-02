@@ -13,9 +13,6 @@ class _OracoesState extends State<Oracoes> {
         centerTitle: true,
         backgroundColor: const Color(0xff262626),
         title: const Text("Orações"),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-        ),
       ),
       body: SingleChildScrollView(
         child: Column(),

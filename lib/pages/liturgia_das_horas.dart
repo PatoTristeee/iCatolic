@@ -13,7 +13,6 @@ class _LHorasState extends State<LHoras> {
         centerTitle: true,
         backgroundColor: Color(0xff262626),
         title: Text("Liturgia das Horas"),
-        titleTextStyle: TextStyle(color: Colors.white),
       ),
       body: Container(
         padding: const EdgeInsets.all(18.0),

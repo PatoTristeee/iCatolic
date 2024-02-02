@@ -17,9 +17,6 @@ class _NovenasState extends State<PSocorro> {
         centerTitle: true,
         backgroundColor: const Color(0xff262626),
         title: const Text("Perpétuo Socorro"),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-        ),
       ),
       body: P_Socorro(),
     );

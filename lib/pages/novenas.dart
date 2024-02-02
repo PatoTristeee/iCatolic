@@ -17,9 +17,6 @@ class _NovenasState extends State<Novenas> {
         centerTitle: true,
         backgroundColor: const Color(0xff262626),
         title: const Text("Novenas"),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-        ),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(18.0),
