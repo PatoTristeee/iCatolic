@@ -11,7 +11,7 @@ class _LHorasState extends State<LHoras> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color(0xff262626),
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text("Liturgia das Horas"),
       ),
       body: Container(
@@ -24,8 +24,7 @@ class _LHorasState extends State<LHoras> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     minimumSize: const Size(double.infinity, 70),
-                    primary: Color(0xff262626),
-                    onPrimary: Colors.white,
+                    primary: Theme.of(context).primaryColor,
                     shadowColor: Colors.black),
                 onPressed: () {},
                 child: Text("Invitatório")),
@@ -37,8 +36,7 @@ class _LHorasState extends State<LHoras> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     minimumSize: const Size(double.infinity, 70),
-                    primary: Color(0xff262626),
-                    onPrimary: Colors.white,
+                    primary: Theme.of(context).primaryColor,
                     shadowColor: Colors.black),
                 onPressed: () {},
                 child: Text("Laudes")),
@@ -50,8 +48,7 @@ class _LHorasState extends State<LHoras> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     minimumSize: const Size(double.infinity, 70),
-                    primary: Color(0xff262626),
-                    onPrimary: Colors.white,
+                    primary: Theme.of(context).primaryColor,
                     shadowColor: Colors.black),
                 onPressed: () {},
                 child: Text("Hora Média")),
@@ -63,8 +60,7 @@ class _LHorasState extends State<LHoras> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     minimumSize: const Size(double.infinity, 70),
-                    primary: Color(0xff262626),
-                    onPrimary: Colors.white,
+                    primary: Theme.of(context).primaryColor,
                     shadowColor: Colors.black),
                 onPressed: () {},
                 child: Text("Vésperas")),
@@ -76,8 +72,7 @@ class _LHorasState extends State<LHoras> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     minimumSize: const Size(double.infinity, 70),
-                    primary: Color(0xff262626),
-                    onPrimary: Colors.white,
+                    primary: Theme.of(context).primaryColor,
                     shadowColor: Colors.black),
                 onPressed: () {},
                 child: Text("Completas")),

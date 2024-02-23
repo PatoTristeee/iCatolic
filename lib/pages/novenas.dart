@@ -15,7 +15,7 @@ class _NovenasState extends State<Novenas> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: const Color(0xff262626),
+        backgroundColor: Theme.of(context).primaryColor,
         title: const Text("Novenas"),
       ),
       body: SingleChildScrollView(
@@ -28,7 +28,7 @@ class _NovenasState extends State<Novenas> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     minimumSize: const Size(double.infinity, 70),
-                    primary: const Color(0xff252525),
+                    primary: Theme.of(context).primaryColor,
                     shadowColor: const Color(0xff000000)),
                 onPressed: () {
                   Navigator.push(

@@ -21,7 +21,7 @@ class _LiturgiaDiariaState extends State<LiturgiaDiaria> {
         appBar: AppBar(
           title: const Text("Liturgia Diária"),
           centerTitle: true,
-          backgroundColor: const Color(0xff252525),
+          backgroundColor: Theme.of(context).primaryColor,
           bottom: const TabBar(
             tabs: [
               Text("1ª Leitura"),

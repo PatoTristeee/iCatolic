@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: const Color(0xff262626),
+        backgroundColor: Theme.of(context).primaryColor,
         title: const Text("iCatólico"),
       ),
       drawer: menuDrawer(context),
@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20)),
                         fixedSize: const Size(88, 88),
-                        primary: const Color(0xff252525),
+                        primary: Theme.of(context).primaryColor,
                         shadowColor: const Color(0xff000000)),
                     onPressed: () {
                       Navigator.push(
@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                           fixedSize: const Size(88, 88),
-                          primary: const Color(0xff252525),
+                          primary: Theme.of(context).primaryColor,
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
                         alert();
@@ -89,7 +89,7 @@ class _HomeState extends State<Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                           fixedSize: const Size(88, 88),
-                          primary: const Color(0xff252525),
+                          primary: Theme.of(context).primaryColor,
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
                         Navigator.push(context,
@@ -109,7 +109,7 @@ class _HomeState extends State<Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                           fixedSize: const Size(88, 88),
-                          primary: const Color(0xff252525),
+                          primary: Theme.of(context).primaryColor,
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
                         alert();
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20)),
-                        backgroundColor: const Color(0xff252525),
+                        backgroundColor: Theme.of(context).primaryColor,
                         fixedSize: const Size(88, 88),
                         shadowColor: const Color(0xff000000),
                       ),
@@ -137,7 +137,7 @@ class _HomeState extends State<Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                           fixedSize: const Size(88, 88),
-                          primary: const Color(0xff252525),
+                          primary: Theme.of(context).primaryColor,
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
                         alert();
@@ -156,7 +156,7 @@ class _HomeState extends State<Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                           fixedSize: const Size(88, 88),
-                          primary: const Color(0xff252525),
+                          primary: Theme.of(context).primaryColor,
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
                         Navigator.push(
@@ -171,24 +171,41 @@ class _HomeState extends State<Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                           fixedSize: const Size(88, 88),
-                          primary: const Color(0xff252525),
+                          primary: Theme.of(context).primaryColor,
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
                         alert();
                       },
-                      child: const Text("Cânticos")),
+                      child: const Text("Via Sacra")),
                   const SizedBox(width: 10),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                           fixedSize: const Size(88, 88),
-                          primary: const Color(0xff252525),
+                          primary: Theme.of(context).primaryColor,
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
                         alert();
                       },
                       child: const Text("Catequese"))
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)),
+                          fixedSize: const Size(88, 88),
+                          primary: Theme.of(context).primaryColor,
+                          shadowColor: const Color(0xff000000)),
+                      onPressed: () {
+                        alert();
+                      },
+                      child: const Text("Cânticos")),
                 ],
               )
             ],

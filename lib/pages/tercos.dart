@@ -8,13 +8,32 @@ class Tercos extends StatefulWidget {
 }
 
 class _TercosState extends State<Tercos> {
+  void alert() {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: const Text("ESPERE!"),
+            content: const Text(
+                "Aplicativo em desenvolvimento. Aguarde as próximas atualizações!"),
+            actions: [
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: const Text("Ok"))
+            ],
+          );
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Terços"),
         centerTitle: true,
-        backgroundColor: Color(0xff262626),
+        backgroundColor: Theme.of(context).primaryColor,
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(18.0),
@@ -25,11 +44,13 @@ class _TercosState extends State<Tercos> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     minimumSize: const Size(double.infinity, 70),
-                    primary: const Color(0xff252525),
+                    primary: Theme.of(context).primaryColor,
                     shadowColor: const Color(0xff000000)),
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Rosario()));
+                  /*Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Rosario()));*/
+
+                  alert();
                 },
                 child: Text("Santo Rosário")),
             SizedBox(
@@ -40,7 +61,7 @@ class _TercosState extends State<Tercos> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
                   minimumSize: const Size(double.infinity, 70),
-                  primary: const Color(0xff252525),
+                  primary: Theme.of(context).primaryColor,
                   shadowColor: const Color(0xff000000)),
               onPressed: () {
                 Navigator.of(context)
