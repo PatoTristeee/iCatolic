@@ -1,6 +1,7 @@
 import 'package:icatolico/pages/liturgia_diaria.dart';
 import 'package:icatolico/pages/novenas.dart';
 import 'package:icatolico/pages/tercos.dart';
+import 'package:icatolico/pages/via-sacra.dart';
 
 import 'liturgia_das_horas.dart';
 import 'widget_drawer.dart';
@@ -174,7 +175,10 @@ class _HomeState extends State<Home> {
                           primary: Theme.of(context).primaryColor,
                           shadowColor: const Color(0xff000000)),
                       onPressed: () {
-                        alert();
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ViaSacra()));
                       },
                       child: const Text("Via Sacra")),
                   const SizedBox(width: 10),
